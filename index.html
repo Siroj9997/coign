@@ -1,0 +1,73 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form </title>
+    <style>
+        .header{
+            color: black;
+            background-color: crimson;
+            text-align: center;
+            text-decoration: wavy;
+            border-radius: 20px;
+        }
+        *{
+        }
+        fieldset{
+            margin-left: 100px;
+            margin-right: 100px;
+            /*width: 50px: */
+        }
+
+        form{
+            border-radius: 25px;
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.copahost.com%2Fblog%2Fhtml-image%2F&psig=AOvVaw1J196QqRIm18TSd60RRt4f&ust=1664465544505000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCNi5mMHnt_oCFQAAAAAdAAAAABAJ');
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="header">Chanakya Application</h1>
+
+    <form action="./submitted.html">
+<fieldset>
+    <legend>PERSONAL DETAILS</legend>
+    <label for="First Name">First Name:</label><br>
+    <input type="First Name" placeholder="Enter First Name">
+    <br><br>
+    <label for="Second Name">Second Name:</label><br>
+    <input type="Second Name" placeholder="Enter Second Name">
+    <br><br>
+    <label for="text">User Name:</label><br>
+    <input type="user Name" placeholder="Enter your user name">
+    <br><br>
+    <label for="Email Id">Email Id:</label><br>
+    <input type="Email Id" placeholder="Enter your Email Id" pattern="(?=.*\d)(?=.*[@]">
+    <br><br>
+    <label for="Password">Password:</label><br>
+    <input type="Password" placeholder="Enter your password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}"
+    title="Password must contain atleast one lower and upercase,one special charecter, one number and it should be atleast 8 or more charecters">
+    <br><br>
+</fieldset>
+
+<fieldset>
+    <legend>Select your gender:</legend>
+    <input type="radio" name="gender">male <br>
+    <input type="radio" name="gender">female <br>
+    <input type="radio" name="gender">others <br>
+    <br><br>
+</fieldset>
+
+<fieldset>
+    <legend>Select your Skil:</legend>
+    <input type="checkbox" name="checkbox">c <br>
+    <input type="checkbox" name="checkbox">c++ <br>
+    <input type="checkbox" name="checkbox">python <br>
+    <input type="checkbox" name="checkbox">java <br>
+    <br><br>
+</fieldset>
+
+<button>Submit</button>
+</form>
+</body>
+</html>
+
